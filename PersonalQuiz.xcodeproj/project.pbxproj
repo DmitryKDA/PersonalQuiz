@@ -13,6 +13,10 @@
 		DBF7775425AC9772006ED34B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7775225AC9772006ED34B /* Main.storyboard */; };
 		DBF7775625AC9775006ED34B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7775525AC9775006ED34B /* Assets.xcassets */; };
 		DBF7775925AC9775006ED34B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7775725AC9775006ED34B /* LaunchScreen.storyboard */; };
+		DBF7776925AC9992006ED34B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7776825AC9992006ED34B /* Question.swift */; };
+		DBF7776D25AC99A7006ED34B /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7776C25AC99A7006ED34B /* ResponseType.swift */; };
+		DBF7777025AC99B6006ED34B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7776F25AC99B6006ED34B /* Answer.swift */; };
+		DBF7777325AC99C0006ED34B /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7777225AC99C0006ED34B /* AnimalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DBF7775525AC9775006ED34B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF7775825AC9775006ED34B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF7775A25AC9775006ED34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF7776825AC9992006ED34B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DBF7776C25AC99A7006ED34B /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		DBF7776F25AC99B6006ED34B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		DBF7777225AC99C0006ED34B /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		DBF7774B25AC9772006ED34B /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				DBF7774C25AC9772006ED34B /* AppDelegate.swift */,
-				DBF7774E25AC9772006ED34B /* SceneDelegate.swift */,
-				DBF7775025AC9772006ED34B /* ViewController.swift */,
-				DBF7775225AC9772006ED34B /* Main.storyboard */,
-				DBF7775525AC9775006ED34B /* Assets.xcassets */,
-				DBF7775725AC9775006ED34B /* LaunchScreen.storyboard */,
-				DBF7775A25AC9775006ED34B /* Info.plist */,
+				DBF7776125AC97A1006ED34B /* Model */,
+				DBF7776225AC97B7006ED34B /* View */,
+				DBF7776325AC97DD006ED34B /* Controller */,
+				DBF7776425AC97EF006ED34B /* SourceFiles */,
+				DBF7776725AC98FD006ED34B /* SupportingFiles */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		DBF7776125AC97A1006ED34B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7776825AC9992006ED34B /* Question.swift */,
+				DBF7776C25AC99A7006ED34B /* ResponseType.swift */,
+				DBF7776F25AC99B6006ED34B /* Answer.swift */,
+				DBF7777225AC99C0006ED34B /* AnimalType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF7776225AC97B7006ED34B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7775225AC9772006ED34B /* Main.storyboard */,
+				DBF7775725AC9775006ED34B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBF7776325AC97DD006ED34B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7775025AC9772006ED34B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBF7776425AC97EF006ED34B /* SourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7775525AC9775006ED34B /* Assets.xcassets */,
+			);
+			path = SourceFiles;
+			sourceTree = "<group>";
+		};
+		DBF7776725AC98FD006ED34B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7775A25AC9775006ED34B /* Info.plist */,
+				DBF7774C25AC9772006ED34B /* AppDelegate.swift */,
+				DBF7774E25AC9772006ED34B /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF7775125AC9772006ED34B /* ViewController.swift in Sources */,
+				DBF7776925AC9992006ED34B /* Question.swift in Sources */,
 				DBF7774D25AC9772006ED34B /* AppDelegate.swift in Sources */,
+				DBF7777025AC99B6006ED34B /* Answer.swift in Sources */,
+				DBF7777325AC99C0006ED34B /* AnimalType.swift in Sources */,
 				DBF7774F25AC9772006ED34B /* SceneDelegate.swift in Sources */,
+				DBF7776D25AC99A7006ED34B /* ResponseType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M96K8LQPN;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PersonalQuiz/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M96K8LQPN;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PersonalQuiz/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
